@@ -1,0 +1,53 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: none;
+  top: 2rem;
+  padding-left: 2rem;
+  z-index: 1;
+  transition: 300ms opacity ease-in-out !important;
+
+}
+
+.navbar-nav {
+  flex-direction: row;
+  padding-right: 2rem;
+  width: fit-content;
+}
+
+.navbar .navbar-brand {
+  font-size: 5vw;
+  font-family: "Inter-Bold", serif;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: white;
+  transition: 300ms opacity, color ease-in-out !important;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: #597cf3;
+}
+
+.opacity-none {
+  opacity: 0;
+}
+
+/*SCROLL-BOX*/
+.scroll-wrapper {
+  overflow-x: hidden;
+  background-color: transparent !important;
+  z-index: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-brand {
+    font-size: 1.9rem;
+  }
+  .navbar-nav {
+    padding-right: 5rem;
+  }
+}

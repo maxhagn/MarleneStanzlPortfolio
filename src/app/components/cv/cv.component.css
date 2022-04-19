@@ -1,0 +1,49 @@
+.reputation-container {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+}
+
+h2 {
+  font-family: "Inter-Bold", serif;
+  color: #597cf4;
+  font-size: 7vw;
+}
+
+.cv-year {
+  font-size: 1rem;
+  text-transform: none;
+  color: #5c67dd;
+}
+
+h3 {
+  font-size: 6vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Inter-Bold", serif;
+  text-transform: none;
+  color: #292837;
+}
+
+@media only screen and (max-width: 991px) {
+  h2 {
+    padding-bottom: 1rem;
+  }
+  h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  .reputation-container {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+  }
+}

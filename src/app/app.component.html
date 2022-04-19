@@ -1,0 +1,33 @@
+<nav [classList]="styleNavbar()">
+  <a class="navbar-brand pb-md-0 ps-md-5 pe-md-5" (click)="scrollToElement(hero)" [style.color]="navbarColor">Marlene Stanzl</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a (click)="scrollToElement(cv)" class="nav-link me-2" [style.color]="navbarColor">Lebenslauf</a>
+    </li>
+    <li class="nav-item">
+      <a (click)="scrollToElement(contact)" class="nav-link" [style.color]="navbarColor">Kontakt</a>
+    </li>
+  </ul>
+</nav>
+
+<ng-scrollbar #scrollable
+              class="scroll-event"
+              pointerEventsMethod="scrollbar"
+              thumbClass="scrollbar"
+              track="all">
+  <div class="scroll-wrapper">
+
+    <div #hero>
+      <app-hero [transformBox]="transformBox"></app-hero>
+    </div>
+    <div #cv>
+      <app-cv></app-cv>
+    </div>
+    <div #contact>
+      <app-contact></app-contact>
+    </div>
+
+
+    <app-footer></app-footer>
+  </div>
+</ng-scrollbar>

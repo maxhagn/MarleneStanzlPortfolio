@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Inter-Light;
+  src: url(/assets/fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(/assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-Black;
+  src: url(/assets/fonts/Inter-Black.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(/assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter-Extra-Bold;
+  src: url(/assets/fonts/Inter-ExtraBold.ttf);
+}
+
+/*----------FONT----------*/
+* {
+  font-family: "Inter-Regular", serif;
+}
+
+/*----------GENERALS----------*/
+html, body {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #5c67dd;
+}
+
+.social-container svg {
+  height: 20px;
+}

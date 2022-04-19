@@ -1,0 +1,68 @@
+.contact-container {
+  background-color: #292837;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.contact-container p {
+  color: white;
+}
+
+.action-button {
+  font-size: 1rem;
+  border: 1px solid #727480;
+  background: none;
+  padding: 0.5em 3em;
+  color: white;
+}
+
+.contact-action-container {
+  width: 100%;
+  text-align: center;
+  background-color: #292837;
+  border-top: 1px solid #434250;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.contact-action-left, .contact-action-right {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: 100%;
+}
+
+.contact-action-left {
+  border-right: 1px solid #434250;
+}
+
+.filled-action-button {
+  border: 0;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 2px;
+  background-color: #576ff2;
+  transition: 100ms all ease-in-out;
+  text-decoration: none;
+}
+
+.filled-action-button:hover {
+  color: #576ff2;
+  background-color: white;
+}
+
+@media only screen and (max-width: 991px) {
+  .large-text {
+    font-size: 4vw !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contact-container {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+  .large-text {
+    font-size: 1.7rem !important;
+  }
+}

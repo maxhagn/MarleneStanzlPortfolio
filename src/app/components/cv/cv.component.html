@@ -1,0 +1,73 @@
+<div class="reputation-container">
+
+
+  <div class="row">
+    <div class="col-12 text-center">
+    <h2 class="mb-1 mb-md-5">Lebenslauf</h2>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12 text-center">
+      <h3>Stammdaten</h3>
+    </div>
+  </div>
+  <div class="row justify-content-center" *ngFor="let entry of personalData">
+    <div class="col-5 col-md-6 text-end">
+      <p class="cv-year">{{entry.year}}</p>
+    </div>
+    <div class="col-5">
+      <p>
+        {{entry.text}}
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center">
+      <h3>Ausbildung</h3>
+    </div>
+  </div>
+  <div class="row justify-content-center" *ngFor="let entry of education">
+    <div class="col-5 col-md-6 text-end">
+      <p class="cv-year">{{entry.year}}</p>
+    </div>
+    <div class="col-5">
+      <p [innerHTML]="entry.text">
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center">
+      <h3>Berufserfahrung</h3>
+    </div>
+  </div>
+  <div class="row justify-content-center" *ngFor="let entry of workExperience">
+    <div class="col-5 col-md-6 text-end">
+      <p class="cv-year">{{entry.year}}</p>
+    </div>
+    <div class="col-5">
+      <p [innerHTML]="entry.text">
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center">
+      <h3>Sprachen</h3>
+    </div>
+  </div>
+  <div class="row justify-content-center" *ngFor="let entry of languages">
+    <div class="col-5 col-md-6 text-end">
+      <p class="cv-year">{{entry.level}}</p>
+    </div>
+    <div class="col-5">
+      <p>
+        {{entry.language}}
+      </p>
+    </div>
+  </div>
+
+</div>

@@ -7,7 +7,7 @@ RUN npm run build
 
 FROM nginx:1.25.3
 
-COPY --from=build /app/dist/frontend-max /usr/share/nginx/html
+COPY --from=build /app/dist/frontend-marlene /usr/share/nginx/html
 COPY ./docker/nginx.conf.template /etc/nginx/conf.d/default.conf.template
 
 CMD envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'
